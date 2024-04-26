@@ -1,7 +1,7 @@
 variable "region" {
   type        = string
   description = "The AWS Region to use"
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 variable "bucket_prefix" {
   type        = string
