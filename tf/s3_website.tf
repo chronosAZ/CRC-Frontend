@@ -1,6 +1,6 @@
 # create S3 Bucket:
 resource "aws_s3_bucket" "bucket" {
-  bucket = brianwhaas-website-bucket
+  bucket = "brianwhaas-website-bucket"
   tags = {
     "Project"   = "My CRC"
     "ManagedBy" = "Terraform"
