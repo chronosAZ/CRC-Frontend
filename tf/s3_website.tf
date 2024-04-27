@@ -1,6 +1,6 @@
 # create S3 Bucket:
 resource "aws_s3_bucket" "bucket" {
-  bucket_prefix = var.bucket_prefix #prefix appends with timestamp to make a unique identifier
+  bucket = "brianwhaas-website-bucket"
   tags = {
     "Project"   = "My CRC"
     "ManagedBy" = "Terraform"
@@ -40,15 +40,4 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
   bucket = aws_s3_bucket.bucket.id
   policy = data.aws_iam_policy_document.bucket_policy_document.json
 }
-#upload website files to s3:
-resource "aws_s3_object" "object" {
-  bucket = aws_s3_bucket.bucket.id
-  for_each     = fileset("web/", "*")
-  key          = "website/${each.value}"
-  source       = "web/${each.value}"
-  etag         = filemd5("web/${each.value}")
-  content_type = "text/html"
-  depends_on = [
-    aws_s3_bucket.bucket
-  ]
-}
+
