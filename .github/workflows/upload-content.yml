@@ -1,10 +1,9 @@
 name: upload-content
 
 on:
-  workflow_run:
-    workflows: ["terraform-apply"]
-    types:
-      - completed
+  push:
+    branches:
+      - 'main'
 jobs:
   upload:
     name: "upload/sync Web Files to s3"
