@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+    paths:
+      - 'web/**'
 jobs:
   upload:
     name: "upload/sync Web Files to s3"
