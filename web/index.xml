@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Brian&#39;s Site</title>
-    <link>https://brianwhaas.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in About on Brian&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024, Brian Haas</copyright>
     <lastBuildDate>Tue, 21 May 2024 15:43:19 -0700</lastBuildDate>
-    <atom:link href="https://brianwhaas.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resume</title>
-      <link>https://brianwhaas.com/resume/</link>
+      <link>http://localhost:1313/resume/</link>
       <pubDate>Tue, 21 May 2024 15:43:19 -0700</pubDate>
-      <guid>https://brianwhaas.com/resume/</guid>
+      <guid>http://localhost:1313/resume/</guid>
       <description>Brian Haas Technical Skills AWS: EC2, IAM, Lambda, Cloudwatch, RDS, S3, Route53, EMR, Step Functions, Config, CloudTrail, EKS, DynamoDB, AWS Backup, and more;&#xA;Other: Python, Ansible, Terraform, Shell Scripting, GIT, Gitlab/Gitlab CI/CD, Oracle &amp;amp; MS SQLServer DBMS systems, Linux/Unix system administration, Docker, Jenkins, IaC, CI/CD, Docker, New Relic&#xA;WORK EXPERIENCE Cambia Health&#x9;Jul. 2018 – Jun. 2022&#xA;DevOps Engineer IV&#xA;Cambia runs multiple businesses in the healthcare space. (cambiahealth.com). As a DevOps Engineer IV, I assisted dev teams to build out their apps, onboarded new AWS services and other technologies, mentored junior engineers, and acted as a lead to direct work to junior engineers Architected AWS cloud solutions for business unit development teams, developed IAC to deploy their cloud infrastructure, navigated network, security, and availability requirements, acted as AWS SME, and provided ongoing support for those teams Evaluated, tested and onboarded new AWS services, DevOps tools and technologies.</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://brianwhaas.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 21 May 2024 15:19:12 -0700</pubDate>
-      <guid>https://brianwhaas.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>About Hello, I&amp;rsquo;m Brian Haas. I live the Phoenix Metro.&#xA;This page is here because I wanted to complete the Cloud Resume Challenge&#xA;I&amp;rsquo;ve been on a career break since 2022 and and seeking a job back on the DevOPS field. This is site will host my resume for the challenge, as well as this page, the visitor counter and links my other socials and Github.&#xA;I&amp;rsquo;ll be blogging about the CRC over at my page on Dev</description>
     </item>
   </channel>
