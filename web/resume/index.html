@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Brian&#39;s Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../images/headshot.png"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../" class="text-decoration-none">
+                    
+                        Brian Haas
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    This is my site. There are many like it, but this one is mine.
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../resume/" title="Resume">Resume</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="http://github.com/chronosaz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.linkedin.com/in/brianwhaas/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://dev.to/brianhaas" target="_blank">
+                            <i class="fab fa-dev fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fas fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+
+                   <li id="count" class="list-inline-item mr-3"></li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+   <script>
+        const countElement = document.getElementById('count');    
+        updateHitCount();
+
+        function updateHitCount() {
+            fetch('https://bmmp7gwdsi.execute-api.us-east-1.amazonaws.com/v1/hitcounter', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(res => res.json())
+            .then(res => {
+                countElement.innerHTML = 'Visits: ' + res.hitcount;
+            })
+        }
+    </script>
+</header>
+<div class="container">
+    <div class="pl-sm-4 ml-sm-5">
+        <h2 id="brian-haas">Brian Haas</h2>
+<h4 id="technical-skills">Technical Skills</h4>
+<ul>
+<li>
+<p>AWS: EC2, IAM, Lambda, Cloudwatch, RDS, S3, Route53, EMR, Step Functions, Config, CloudTrail, EKS, DynamoDB, AWS Backup, and more;</p>
+</li>
+<li>
+<p>Other: Python, Ansible, Terraform, Shell Scripting, GIT, Gitlab/Gitlab CI/CD, Oracle &amp; MS SQLServer DBMS systems, Linux/Unix system administration, Docker, Jenkins, IaC, CI/CD, Docker, New Relic</p>
+</li>
+</ul>
+<h4 id="work-experience">WORK EXPERIENCE</h4>
+<p><strong>Cambia Health</strong>									          	  <strong>Jul. 2018 – Jun. 2022</strong></p>
+<p><strong>DevOps Engineer IV</strong></p>
+<ul>
+<li>Cambia runs multiple businesses in the healthcare space. (cambiahealth.com).</li>
+<li>As a DevOps Engineer IV, I assisted dev teams to build out their apps, onboarded new AWS services and other technologies, mentored junior engineers, and acted as a lead to direct work to junior engineers</li>
+<li>Architected AWS cloud solutions for business unit development teams, developed IAC to deploy their cloud infrastructure, navigated network, security, and availability requirements, acted as AWS SME, and provided ongoing support for those teams</li>
+<li>Evaluated, tested and onboarded new AWS services, DevOps tools and technologies. Made sure they complied with security and HIPAA requirements. Examples: Cloudfront,Workspaces,Image Builder,AWS Backup,LEX,Terraform</li>
+<li>As the lead DevOps Engineer, I filled in for the manager when needed, directed work to junior staff members, mentored junior engineers, and contributed to company wide technology decisions.</li>
+<li>Built and maintained Ec2 Image build process to produce AMI’s for linux and windows that complied with the configuration and security requirements of Cambia.</li>
+<li>Migrated hundreds of Jenkins projects to Gitlab CI/CD</li>
+<li>Identified and created plans to eliminate tech debt and migrate processes to new technologies</li>
+<li>Assisted with the management and patching, upgrade of AWS EKS systems.</li>
+</ul>
+<p><strong>Cambia Health									              Jun. 2008 – Jul. 2018</strong></p>
+<p><strong>Database Administrator III/IV</strong></p>
+<ul>
+<li>Evaluated and developed proof of concepts for new database technologies.</li>
+<li>Built and implemented Infrastructure as Code to deploy and manage Cloud databases hosted at AWS</li>
+<li>Assisted developers with tuning SQL queries &amp; troubleshooting other performance issues in both Oracle and SQL server databases</li>
+<li>Managed, patched, upgraded, etc, Both Oracle and SQL server databases</li>
+<li>Implemented and managed Oracle RAC, SQL CDC, SQL server Replication</li>
+</ul>
+<p><strong>Musician’s Friend       	          	           Aug. 2000 – May 2008</strong></p>
+<p><strong>Database Administrator</strong></p>
+<ul>
+<li>Oracle database administrator for ecommerce back end.</li>
+<li>Backup system administrator, netbackup administrator.</li>
+<li>Created and maintained all facets of Oracle production and test environments</li>
+</ul>
+
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024, Brian Haas
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+    </small>
+</footer>
+</body>
+</html>
