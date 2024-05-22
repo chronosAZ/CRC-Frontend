@@ -6,7 +6,7 @@ resource "aws_cloudfront_origin_access_identity" "oai" {
 #Cloudfront Function to rewrite index.html 
 resource "aws_cloudfront_function" "rewrite_index" {
   name = "rewriteIndex"
-  runtime = "cloudfront-js-2.0"
+  runtime = "cloudfront-js-1.0"
   comment = "Rewite index.html"
   code = file("${path.module}/js/rewriteindex.js") 
   publish = true
