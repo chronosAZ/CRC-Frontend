@@ -3,6 +3,15 @@ resource "aws_cloudfront_origin_access_identity" "oai" {
   comment = "OAI for ${var.domain_name}"
 }
 
+#Cloudfront Function to rewrite index.html 
+resource "aws_cloudfront_function" "rewrite_index" {
+  name = "rewriteIndex"
+  runtime = "cloudfront-js-2.0"
+  comment = "Rewite index.html"
+  code = file("${path.module}/js/rewriteindex.js") 
+  publish = true
+}
+
 # cloudfront terraform - creating AWS Cloudfront distribution :
 resource "aws_cloudfront_distribution" "cf_dist" {
   enabled             = true
@@ -27,6 +36,10 @@ resource "aws_cloudfront_distribution" "cf_dist" {
         forward = "all"
       }
     }
+    function_association {
+       event_type   = "viewer-request"
+       function_arn = aws_cloudfront_function.rewrite_index.arn
+      }
   }
   restrictions {
     geo_restriction {
